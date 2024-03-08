@@ -180,7 +180,7 @@ globalInputBtn.addEventListener("click", async () => {
     await handleClick();
 });
 
-globalInputBtn.addEventListener("keydown", async (event) => {
+globalInput.addEventListener("keydown", async (event) => {
     if (event.key === 'Enter') {
         await handleClick();
     }
