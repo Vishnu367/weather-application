@@ -176,9 +176,18 @@ async function weatherCard(data) {
     return card;
 } 
 
-
 globalInputBtn.addEventListener("click", async () => {
-    const globalCityName = globalInput.value;
+    await handleClick();
+});
+
+globalInputBtn.addEventListener("keydown", async (event) => {
+    if (event.key === 'Enter') {
+        await handleClick();
+    }
+});
+
+async function handleClick() {
+ const globalCityName = globalInput.value;
     if (globalCityName == '') {
         alert("Please Enter City Name!");
     } else {
@@ -190,7 +199,7 @@ globalInputBtn.addEventListener("click", async () => {
         }
     }
     globalInput.value = '';
-})
+};
 
 weatherListbtn.addEventListener("click", async () => {
     const weatherListCityName = weatherListInput.value;
