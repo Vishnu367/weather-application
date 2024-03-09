@@ -1,3 +1,3 @@
 # weather-application
 
-demo -> https://vishnu367.github.io/weather-application/
+preview -> https://vishnu367.github.io/weather-application/
